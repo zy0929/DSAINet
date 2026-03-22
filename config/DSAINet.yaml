@@ -1,0 +1,44 @@
+model:
+  name: "DSAINet"
+  emb_size: 40
+  heads: 4
+
+  # patch embedding
+  eeg1_f1: 16
+  eeg1_kernel_size: 64
+  eeg1_D: 2
+  eeg1_pooling_size1: 4
+  eeg1_pooling_size2: 8
+  eeg1_dropout_rate: 0.25
+
+  # branch kernel lists
+  branch_1_kernels: [11, 15]
+  branch_2_kernels: [3, 7]
+
+  # conv expansion and dropout
+  conv_expansion: 4
+  conv_dropout: 0.25
+
+  # attention
+  attn_depth: 1
+  attn_dropout: 0.25
+  # intra-attn
+  intra_ffn_expansion: 2
+  # inter-attn
+  inter_ffn_expansion: 2
+
+  # big residual controls
+  big_residual: true
+  big_residual_learnable: true
+
+  # classifier
+  cls_dropout: 0.25
+
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.001
+  norm: Z_Score
+  seed: 42
+  optimizer: "adam"
+  weight_decay: 0.0001
