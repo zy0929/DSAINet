@@ -4,8 +4,8 @@ import torch
 import torch.nn as nn
 import yaml
 from torch.utils.data import DataLoader, Subset
-from preprocess.BCIC_IV_2a import load_loso_bcic_iv_2a, load_cs_bcic_iv_2a
-from preprocess.BCIC_IV_2b import load_loso_bcic_iv_2b, load_cs_bcic_iv_2b
+from preprocess.BCIC_IV_2a import load_loso_bcic_iv_2a
+from preprocess.BCIC_IV_2b import load_loso_bcic_iv_2b
 from preprocess.Zhou2016 import load_loso_zhou2016
 from preprocess.PhysioNet_MI import load_kfold_physionet_mi
 from preprocess.OpenBMI import load_kfold_openbmi
