@@ -22,7 +22,7 @@ to create "epochs" artificially.
 '''
 
 mne.set_log_level(verbose='ERROR') 
-root_dir = '/mnt/data2/ADFTD' 
+root_dir = '/mnt/data2/DSAINet/ADFTD' 
 
 # Preprocessing
 bandpass = (0.5, 45.0) 

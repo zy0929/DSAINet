@@ -30,7 +30,7 @@ T for training, E for evaluation
 '''
 
 mne.set_log_level(verbose='ERROR') 
-root_dir = '/mnt/data2/BCIC_IV_2a/'
+root_dir = '/mnt/data2/DSAINet/BCIC_IV_2a/'
 
 bandpass = (0.5, 40.0)
 resample_rate = 250.0
