@@ -22,7 +22,6 @@ from sklearn.model_selection import train_test_split
 from utils.util import set_seed, setup_logger, classwise_augmentation
 from utils.load_data import load_data
 from utils.load_model import load_model
-from utils.filter import filter_bank
 from utils.norm import apply_ea_to_arrays
 
 def parse_args():
