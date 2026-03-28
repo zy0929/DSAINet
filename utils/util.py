@@ -74,12 +74,10 @@ def classwise_augmentation(data: torch.Tensor,
         return data, label
     n_aug = B // n_classes
     if n_aug == 0:
-        # batch 太小，无法按类均分生成增强样本，直接返回
         return data, label
 
     seg_len = T // n_segments
     if seg_len == 0:
-        # T 太短，不够分段
         return data, label
 
     aug_data_list = []
