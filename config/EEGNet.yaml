@@ -1,0 +1,17 @@
+model:
+  name: "EEGNet"
+  kernLenght: 64
+  F1: 8
+  D: 2
+  F2: 16
+  dropoutRate: 0.25
+  norm_rate: 0.25
+
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.001
+  seed: 42
+  norm: Z_Score
+  optimizer: "adam"
+  weight_decay: 0.0001

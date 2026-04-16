@@ -1,0 +1,22 @@
+model:
+  name: "MSVTNet"
+  "F": [9, 9, 9, 9]
+  "C1": [15, 31, 63, 125]
+  "C2": 15
+  "D": 2
+  "P1": 8
+  "P2": 7
+  "Pc": 0.3
+  "nhead": 8
+  "ff_ratio": 1
+  "Pt": 0.5 # 0.25
+  "layers": 2
+
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.001
+  seed: 42
+  norm: Z_Score
+  optimizer: "adam"
+  weight_decay: 0.0001

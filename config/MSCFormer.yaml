@@ -1,0 +1,14 @@
+model:
+  name: "MSCFormer"
+  dropout_rate: 0.25
+
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.001
+  b1: 0.5
+  b2: 0.999
+  seed: 42
+  norm: Z_Score
+  optimizer: "adam"
+  weight_decay: 0.0001

@@ -1,0 +1,20 @@
+model:
+  name: "TMSANet"
+  radix: 1
+  embed_dim: 19 # 2a: 19, 2b:6, HGD:10
+  pool_size: 50
+  pool_stride: 15
+  num_heads: 4
+  fc_ratio: 2
+  depth: 1
+  attn_drop: 0.5 # HGD: 0.7
+  fc_drop: 0.5
+
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.001 # 2e-12
+  seed: 42
+  norm: Z_Score
+  optimizer: "adamw"
+  weight_decay: 0.0001

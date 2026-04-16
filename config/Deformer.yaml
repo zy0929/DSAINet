@@ -1,0 +1,18 @@
+model:
+  name: "Deformer"
+  temporal_kernel: 21 # 21 13 51
+  num_kernel: 64
+  depth: 4
+  heads: 32
+  mlp_dim: 32
+  dim_head: 32
+  dropoutRate: 0.25 # 0.25 for Rockhill2021, 0.5 for other datasets
+
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.001
+  seed: 42
+  norm: Z_Score
+  optimizer: "adam"
+  weight_decay: 0.0001

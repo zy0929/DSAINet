@@ -1,0 +1,26 @@
+model:
+  name: "DBConformer"
+  emb_size: 40
+  tem_depth: 2
+  chn_depth: 2
+  args: {
+          "patch_size": 125,
+          "time_sample_num": 1000,
+          "spa_dim": 16,
+          "gate_flag": False,
+          "posemb_flag": True,
+          "branch": "all",
+          "chn_atten_flag": True,
+        }
+  drop_p : 0.25
+  forward_drop_p : 0.25
+  dropout : 0.25
+  
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.001
+  seed: 42
+  norm: Z_Score
+  optimizer: "adam"
+  weight_decay: 0.0001

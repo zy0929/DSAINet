@@ -1,0 +1,22 @@
+model:
+  name: "CTNet"
+  heads: 4
+  emb_size: 40
+  depth: 6
+  eeg1_f1: 20
+  eeg1_kernel_size: 64
+  eeg1_D: 2
+  eeg1_pooling_size1: 8
+  eeg1_pooling_size2: 8
+  eeg1_dropout_rate: 0.3
+  flatten_eeg1: 600
+
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.001
+  b1: 0.5
+  b2: 0.999
+  norm: Z_Score
+  seed: 42
+  optimizer: "adam"

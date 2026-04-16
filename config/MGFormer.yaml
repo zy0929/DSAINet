@@ -1,0 +1,19 @@
+model:
+  name: "MGFormer"
+  embed_dim: 128      
+  num_T: 64       
+  depth: 4          
+  heads: 8         
+  mlp_dim: 256
+  dim_head: 16       
+  dropout: 0.25       
+  fine_grained_kernel: 11 
+
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.001
+  seed: 42
+  norm: Z_Score 
+  optimizer: "adam"
+  weight_decay: 0.0001

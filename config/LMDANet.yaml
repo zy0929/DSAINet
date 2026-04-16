@@ -1,0 +1,17 @@
+model:
+  name: "LMDANet"
+  depth: 9
+  kernel: 75
+  channel_depth1: 24
+  channel_depth2: 9
+  ave_depth: 1
+  avepool: 5
+
+train:
+  epochs: 100
+  batch_size: 32
+  lr: 0.001
+  seed: 42
+  norm: Z_Score
+  optimizer: "adam"
+  weight_decay: 0.0001
