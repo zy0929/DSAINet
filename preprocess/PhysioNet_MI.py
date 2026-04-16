@@ -26,7 +26,7 @@ T2 corresponds to onset of motion (real or imagined) of
 
 mne.set_log_level(verbose='ERROR') 
 tasks = [4, 6, 8, 10, 12, 14]  # motor imagery
-root_dir = '/mnt/data2/DSAINet/PhysioNet-MI/'
+root_dir = '/mnt/data2/DSAINet/PhysioNet_MI/'
 
 bandpass = (0.5, 40.0)
 resample_rate = 250.0

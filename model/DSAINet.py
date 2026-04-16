@@ -1,6 +1,6 @@
 '''
 @File:      DSAINet.py
-@Author:    
+@Author:    Zhiyuan Ma
 @Function:  Original model code of "DSAINet: An Efficient Dual-Scale Attentive Interaction Network for General EEG Decoding"
 '''
 
