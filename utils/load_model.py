@@ -253,8 +253,8 @@ def load_model(model_params, config, n_class, n_channels, n_times, logger, devic
             conv_expansion=model_params['conv_expansion'],
             conv_dropout=model_params['conv_dropout'],
 
-            self_ffn_expansion=model_params['self_ffn_expansion'],
-            cross_ffn_expansion=model_params['cross_ffn_expansion'],
+            intra_ffn_expansion=model_params['intra_ffn_expansion'],
+            inter_ffn_expansion=model_params['inter_ffn_expansion'],
 
             big_residual=model_params['big_residual'],
             big_residual_learnable=model_params['big_residual_learnable'],
