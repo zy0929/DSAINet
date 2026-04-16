@@ -30,9 +30,37 @@ The overall architecture can be summarized as below:
 ```text
 DSAINet/
 ├── config/
-│   └── DSAINet.yaml        # Default configuration for training and model
+│   ├── DSAINet.yaml        # Default configuration
+|   ├── ShallowConvNet.yaml
+|   ├── DeepConvNet.yaml
+|   ├── EEGNet.yaml
+|   ├── Conformer.yaml
+|   ├── ADFCNN.yaml
+|   ├── LMDANet.yaml
+|   ├── MSVTNet.yaml
+|   ├── CTNet.yaml
+|   ├── MSCFormer.yaml
+|   ├── DBConformer.yaml
+|   ├── TMSANet.yaml
+|   ├── MGFormer.yaml
+|   └── Deformer.yaml
+├── figure/
+|   └── main.png            # Network architecture illustration
 ├── model/
-│   └── DSAINet.py          # Main DSAINet architecture implementation
+│   ├── DSAINet.py          # Architecture implementation
+|   ├── ShallowConvNet.py
+|   ├── DeepConvNet.py
+|   ├── EEGNet.py
+|   ├── Conformer.py
+|   ├── ADFCNN.py
+|   ├── LMDANet.py
+|   ├── MSVTNet.py
+|   ├── CTNet.py
+|   ├── MSCFormer.py
+|   ├── DBConformer.py
+|   ├── TMSANet.py
+|   ├── MGFormer.py
+|   └── Deformer.py
 ├── preprocess/             # Preprocessing scripts for each dataset
 │   ├── BCIC_IV_2a.py
 │   ├── BCIC_IV_2b.py
@@ -50,9 +78,7 @@ DSAINet/
 │   ├── norm.py             # Normalization / alignment methods
 │   └── util.py             # Logging, seeding, augmentation, etc.
 ├── train_loso.py           # LOSO evaluation (leave-one-subject-out)
-├── train_kfold.py          # K-fold evaluation (subject-wise KFold)
-└── figure/
-    └── main.png            # Network architecture illustration
+└── train_kfold.py          # K-fold evaluation (subject-wise KFold)
 ```
 
 
