@@ -75,7 +75,6 @@ DSAINet/
 ├── utils/
 │   ├── load_data.py        # Unified data loading interface
 │   ├── load_model.py       # Build model according to config
-│   ├── norm.py             # Normalization / alignment methods
 │   └── util.py             # Logging, seeding, augmentation, etc.
 ├── train_loso.py           # LOSO evaluation (leave-one-subject-out)
 └── train_kfold.py          # K-fold evaluation (subject-wise KFold)

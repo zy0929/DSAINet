@@ -22,7 +22,6 @@ from sklearn.model_selection import train_test_split
 from utils.util import set_seed, setup_logger, classwise_augmentation
 from utils.load_data import load_data
 from utils.load_model import load_model
-from utils.norm import apply_ea_to_arrays
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Model Training")
@@ -104,9 +103,6 @@ def train_test_loso(data, labels, config, device, logger):
             train_data = (train_data - train_mean) / train_std
             valid_data = (valid_data - train_mean) / train_std
             test_data  = (test_data - train_mean) / train_std
-        elif config['train']['norm'] == 'EA_Online':
-            # EA normalization
-            train_data, valid_data, test_data = apply_ea_to_arrays(train_data, valid_data, test_data, n_channels)
         
         # model
         model, criterion, optimizer = load_model(model_params, config, n_class, n_channels, n_times, logger, device)
