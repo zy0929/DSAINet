@@ -152,3 +152,16 @@ python train_kfold.py --config config/DSAINet.yaml --dataset EEGMat --batch-size
 ```bash
 python train_kfold.py --config config/DSAINet.yaml --dataset Shin2018 --batch-size 32 --lr 0.001 --epochs 100 --seed 0 --device 0
 ```
+
+## 📚 Citation
+
+If you find this repository useful in your research, please consider citing our work:
+
+```bibtex
+@article{ma2026dsainet,
+  title={DSAINet: An Efficient Dual-Scale Attentive Interaction Network for General EEG Decoding},
+  author={Ma, Zhiyuan and Li, Zeyuan and Qiu, Zihao and Li, Jinhao and Meng, Lingqin and Zhang, Xinche and Liu, Yixuan and Shen, Xinke and Song, Sen},
+  journal={arXiv preprint arXiv:2604.18095},
+  year={2026}
+}
+```
