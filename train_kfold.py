@@ -49,7 +49,7 @@ def train_test_kfold(data, labels, config, device, logger):
     num_epochs = config['train']['epochs']
 
     fold_num = 0
-    if args.dataset == 'Mumtaz2016':
+    if args.dataset == 'Mumtaz2017':
         fold_num = 10
         subjects_idx = np.arange(n_subjects)
         hc_idx = subjects_idx[:30]
